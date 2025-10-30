@@ -24,7 +24,7 @@ Este é um projeto simples de lista de tarefas desenvolvido com PHP, MySQL (Mari
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Joalisso-Lemos/MVP_tarefas.git
+   git clone https://github.com/Joalisson-Lemos/MVP_tarefas.git
 Coloque a pasta dentro de htdocs do XAMPP:
 
 Código
