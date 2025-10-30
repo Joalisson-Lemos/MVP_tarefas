@@ -1,0 +1,19 @@
+.tarefas {
+    margin-top: 20px;
+}
+.tarefas{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.tarefas input[type="checkbox"]{
+    transform: scale(1.2);
+}
+.concluida {
+    text-decoration: line-through;
+    color: gray;
+}
+a{
+    text-decoration: none;
+}
