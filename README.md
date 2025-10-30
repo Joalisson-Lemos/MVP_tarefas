@@ -20,12 +20,6 @@ Este é um projeto simples de lista de tarefas desenvolvido com PHP, MySQL (Mari
 - CSS3
 - JavaScript puro
 
-## 📦 Estrutura de arquivos
-
-mvp_tarefas/ ├── index.php # Página principal ├── adicionar.php # Insere nova tarefa ├── atualizar.php # Marca como concluída ├── excluir.php # Remove tarefa ├── editar.php # Edita tarefa ├── conexao.php # Conexão com o banco ├── style.css # Estilos visuais ├── script.js # Lógica JS para checkbox
-
-Código
-
 ## 🧪 Como rodar localmente
 
 1. Clone o repositório:
