@@ -9,11 +9,23 @@
 </head>
 <body>
   <h1>Minha Lista de Tarefas</h1>
-
-  <form id="form-tarefa" action="adicionar.php" method="POST">
-    <input type="text" name="titulo" placeholder="Nova tarefa..." required>
-    <button type="submit">Adicionar</button>
-  </form>
+  <div id="adicionar-tarefa">
+<?php if (isset($_GET['adicionado'])): ?>
+  <div id="mensagem" style="background: #d4edda; color: #155724; padding: 10px; border-radius: 10px; margin-bottom: 10px;">
+    Tarefa adicionada com sucesso!
+  </div>
+  <script>
+    setTimeout(function() {
+      var msg = document.getElementById('mensagem');
+      if (msg) msg.style.display = 'none';
+    }, 2500);
+  </script>
+<?php endif; ?>
+    <form id="form-tarefa" action="adicionar.php" method="POST">
+      <input type="text" id = "tarefa" name="titulo" placeholder="Nova tarefa..." required> <br>
+      <button id ="add" type="submit">Adicionar</button>
+    </form>
+  </div>
 
     <div class="lista-tarefas">
     <?php
@@ -23,7 +35,6 @@
     while ($tarefa = $resultado->fetch_assoc()) {
         $checked = $tarefa['concluida'] ? 'checked' : '';
         $classe = $tarefa['concluida'] ? 'concluida' : '';
-
         echo "<div class='tarefa'>";
         echo "<input type='checkbox' class='check-tarefa' data-id='{$tarefa['id']}' $checked>";
         echo "<span class='$classe'>{$tarefa['titulo']}</span>";
