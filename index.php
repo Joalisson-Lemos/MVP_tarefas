@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Lista de Tarefas</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css?v=<?php echo filemtime('style.css'); ?>">
 </head>
 <body>
   <h1>Minha Lista de Tarefas</h1>
