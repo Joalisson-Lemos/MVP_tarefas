@@ -46,6 +46,11 @@ body {
     background-color: lime;
     border-radius: 50px;
     color: black;
+    margin-top: 6px;
+    padding: 9px 22px;
+    min-width: 64px;
+    border-radius: 999px;
+    border: none;
 }
 .botao-editar{
     background-color: aqua;
@@ -72,6 +77,11 @@ body {
 .botao-excluir{
     background-color: red;
     border-radius: 50px;
+    margin-top: 6px;
+    padding: 9px 22px;
+    min-width: 64px;
+    border-radius: 999px;
+    border: none;
 }
 #form-tarefa{
     border-radius: 50px;
